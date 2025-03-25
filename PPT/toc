@@ -1,0 +1,86 @@
+Session 1: Terraform Fundamentals (4 Hours)
+1. Introduction to Terraform (30 mins)
+•	What is Terraform?
+•	Why use Terraform?
+•	Infrastructure as Code (IaC) concepts
+•	Terraform vs. other IaC tools
+2. How Terraform Works (30 mins)
+•	Terraform workflow (Write, Plan, Apply)
+•	Declarative vs. Imperative approach
+•	Terraform Architecture
+3. Terraform CLI (30 mins)
+•	Installing Terraform
+•	Basic CLI commands (init, plan, apply, destroy)
+•	Managing Terraform versions
+4. Terraform Language (HCL) Basics (45 mins)
+•	Introduction to HashiCorp Configuration Language (HCL)
+•	Writing and structuring Terraform configuration files (.tf files)
+•	Variables and Outputs
+•	Data Types and Type Constraints
+5. Terraform State (45 mins)
+•	What is Terraform State?
+•	Local vs. Remote State Storage
+•	Managing state files (terraform state commands)
+•	Locking & State Security
+•	State Manipulation (importing resources, refreshing state)
+6. Labs for Session 1 (1 hour)
+•	Lab 1: Terraform CLI Hands-on
+•	Lab 2: HCL Basics and Configuration Files
+•	Lab 3: Managing Terraform State
+________________________________________
+Session 2: Advanced Terraform Concepts (4 Hours)
+1. Terraform Providers (45 mins)
+•	What are Providers?
+•	Understanding Provider Plugins
+•	Configuring Providers (AWS, Azure, GCP, etc.)
+•	Provider Versioning and Dependency Management
+2. Terraform Modules (45 mins)
+•	Why use Modules?
+•	Creating and Reusing Modules
+•	Module Composition and Nested Modules
+•	Public vs. Private Module Registries
+3. Terraform Language: Functions and Expressions (45 mins)
+•	Introduction to Terraform Functions
+•	String, Numeric, and Collection Functions
+•	Conditional Expressions
+•	Loops and Iterations (for, foreach)
+4. Provisioners in Terraform (45 mins)
+•	When and How to Use Provisioners
+•	Types of Provisioners (Local, Remote, File, etc.)
+•	Best Practices for Using Provisioners
+5. Labs for Session 2 (1 hour)
+•	Lab 4: Using Providers
+•	Lab 5: Creating and Implementing Modules
+•	Lab 6: Functions and Expressions
+•	Lab 7: Working with Provisioners
+________________________________________
+Session 3: Terraform Best Practices and Real-World Implementation (4 Hours)
+1. Terraform State Management and Remote Backends (45 mins)
+•	Remote Backends (AWS S3, Azure Blob, Terraform Cloud)
+•	State Locking and Versioning
+•	Handling State Drift
+2. Terraform Workspaces (30 mins)
+•	What are Workspaces?
+•	Managing Multiple Environments (Dev, QA, Prod)
+•	Switching Between Workspaces
+3. Terraform Security Best Practices (45 mins)
+•	Managing Secrets in Terraform
+•	Sensitive Data Handling
+•	Role-Based Access Control (RBAC)
+4. Terraform Performance Optimization (30 mins)
+•	Parallelism in Terraform
+•	Caching and Remote Execution
+•	Efficient Resource Management
+5. Terraform Testing and Debugging (30 mins)
+•	Debugging Terraform Configurations
+•	Terraform Plan and Apply Debugging
+•	Using terraform fmt, validate, and taint
+6. CI/CD Integration with Terraform (30 mins)
+•	Terraform with GitHub Actions, GitLab CI/CD, Jenkins
+•	Automating Terraform Workflows
+7. Labs for Session 3 (1 hour)
+•	Lab 8: Remote State Management
+•	Lab 9: Terraform Workspaces
+•	Lab 10: Debugging and Best Practices
+•	Lab 11: CI/CD with Terraform
+
