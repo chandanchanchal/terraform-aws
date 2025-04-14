@@ -42,7 +42,7 @@ variable "instance_type" {
 # Block-5: Output Values Block
 output "ec2_instance_publicip" {
   description = "EC2 Instance Public IP"
-  value = aws_instance.my-ec2-vm.public_ip
+  value = aws_instance.ec2demo.public_ip
 }
 #####################################################################
 # Block-6: Local Values Block
