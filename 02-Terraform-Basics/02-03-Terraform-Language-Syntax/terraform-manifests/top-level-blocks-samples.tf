@@ -17,8 +17,8 @@ terraform {
 
     # For State Locking
     dynamodb_table = "terraform-dev-state-table"
-  }
-}*/
+  }*/
+}
 #####################################################################
 # Block-2: Provider Block
 provider "aws" {
@@ -101,5 +101,8 @@ data "aws_ami" "amzlinux" {
     Terraform   = "true"
     Environment = "dev"
   }
-}*/
+
+}
+*/
+
 #####################################################################
