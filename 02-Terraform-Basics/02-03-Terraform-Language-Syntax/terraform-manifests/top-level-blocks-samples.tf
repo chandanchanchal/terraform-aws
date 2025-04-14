@@ -8,7 +8,8 @@ terraform {
       version = ">= 5.0"
     }
   }
-  # Adding Backend as S3 for Remote State Storage with State Locking
+  # Adding Backend as S3 for Remote State Storage with State 
+/*
   backend "s3" {
     bucket = "terraform-google"
     key    = "dev2/terraform.tfstate"
@@ -17,17 +18,17 @@ terraform {
     # For State Locking
     dynamodb_table = "terraform-dev-state-table"
   }
-}
+}*/
 #####################################################################
 # Block-2: Provider Block
 provider "aws" {
   profile = "default" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
-  region  = "us-east-1"
+  region  = "us-east-2"
 }
 #####################################################################
 # Block-3: Resource Block
 resource "aws_instance" "ec2demo" {
-  ami           = "ami-04d29b6f966df1537" # Amazon Linux
+  ami           = "ami-0100e595e1cc1ff7f" # Amazon Linux
   instance_type = var.instance_type
 }
 #####################################################################
@@ -81,7 +82,7 @@ data "aws_ami" "amzlinux" {
 # Block-8: Modules Block
 # AWS EC2 Instance Module
 
-module "ec2_cluster" {
+/*module "ec2_cluster" {
   source                 = "terraform-aws-modules/ec2-instance/aws"
   version                = "~> 2.0"
 
@@ -100,5 +101,5 @@ module "ec2_cluster" {
     Terraform   = "true"
     Environment = "dev"
   }
-}
+}*/
 #####################################################################
