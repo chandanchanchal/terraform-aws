@@ -47,9 +47,9 @@ output "ec2_instance_publicip" {
 #####################################################################
 # Block-6: Local Values Block
 # Create S3 Bucket - with Input Variables & Local Values
-locals {
+/*locals {
   bucket-name-prefix = "${var.app_name}-${var.environment_name}"
-}
+}*/
 #####################################################################
 # Block-7: Data sources Block
 # Get latest AMI ID for Amazon Linux2 OS
