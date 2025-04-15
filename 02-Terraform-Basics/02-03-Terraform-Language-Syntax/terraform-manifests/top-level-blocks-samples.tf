@@ -34,7 +34,7 @@ resource "aws_instance" "ec2demo" {
 #####################################################################
 # Block-4: Input Variables Block
 variable "instance_type" {
-  default = "t2.micro"
+  #default = "t2.micro"
   description = "EC2 Instance Type"
   type = string
 }
